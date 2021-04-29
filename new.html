@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form 2</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h5 class="card-title text-center">Make an appointment</h5>
+            <form class="form-signin" action="get_new.php" method="GET" autocomplete="on">
+
+
+              <div class="form-label-group">
+                <input type="text" id="inputEmail" class="form-control" placeholder="Full Name" name="fullName" pattern="\w+\s+\w+" required >
+              </div>
+
+             <br>
+              <div class="form-label-group">
+                <input type="date" id="birthday" name="date" class="form-control"  required autofocus>
+                
+              </div>
+              <br>
+
+              <div class="form-label-group">
+                <input type="tel" name="phone" placeholder="phone number" id="inputPassword" class="form-control" 
+                required title="9 or 10 numbers only" maxlength="10" pattern="\d{10}" minlength="9">
+              </div>
+              <br>
+             
+              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Confirm</button>
+        
+             
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+</html>
